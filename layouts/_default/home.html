@@ -1,6 +1,11 @@
 {{ define "main" }}
 	{{ .Content }}
-	{{ range site.RegularPages }}
-		<h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+	<section class="timeline">
+	{{ range (where site.RegularPages "Section" "timeline").Reverse }}
+		<article>
+			<h2>{{ partial "time.html" .Date }}</h2>
+			{{ .Content }}
+		</article>
 	{{ end }}
+	</section>
 {{ end }}
