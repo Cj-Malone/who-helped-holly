@@ -1,10 +1,10 @@
 +++
-date = '2024-11-16T00:00:00Z'
+date = '2024-11-16T16:00:00Z'
 draft = true
 title = 'Police'
 +++
 
-CM and BT visited the police station to find out what was going on.
+BT and CM visited the police station to find out what was going on.
 
 We told him who was the last person to see Holly, and when.
 
@@ -16,3 +16,5 @@ He told us we would have to talk to the banks to get the last transaction date, 
 
 He tried to tell us that Hollys front door was broken from the inside...
 However we had first hand knowledge it was broken from the outsite.
+
+He told us "it is clear she was living there for some time".
