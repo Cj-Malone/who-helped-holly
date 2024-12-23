@@ -26,7 +26,7 @@
 	{{ range (where site.RegularPages "Section" "timeline").Reverse }}
 		<article>
 			<div class="timeline-point"></div>
-			<h2>{{ partial "time.html" .Date }}</h2>
+			<h2 id="{{ .RelPermalink }}">{{ partial "time.html" .Date }}</h2>
 			{{ .Content }}
 		</article>
 	{{ end }}
