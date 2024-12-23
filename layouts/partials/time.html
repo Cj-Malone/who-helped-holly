@@ -1,1 +1,1 @@
-<time datetime="{{ . }}">{{ if eq (time.Format "15:04" .) "00:00" }}{{ time.Format "2 Jan 2006" . }}{{ else }}{{ time.Format "2 Jan 2006 15:04" . }}{{ end }}</time>
+<time datetime="{{ . }}">{{ if eq (time.Format "15:04" .) "00:00" }}{{ time.Format "2 Jan 2006" . }}{{ else if eq (time.Format "15:04:05" .) "23:59:59" }}{{ time.Format "2 Jan 2006" . }}{{ else }}{{ time.Format "2 Jan 2006 15:04" . }}{{ end }}</time>
