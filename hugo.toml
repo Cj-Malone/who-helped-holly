@@ -1,4 +1,7 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-gb'
 title = 'Who Helped Holly?'
-disableKinds = ["taxonomy", "taxonomyTerm", "RSS"]
+disableKinds = ["taxonomyTerm", "RSS"]
+
+[markup.goldmark.extensions]
+	typographer = false
